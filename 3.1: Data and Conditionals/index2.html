@@ -7,15 +7,16 @@
     <title>3.1: Data and Conditionals</title>
     <script>
         function myFunction() {
-            let myVar1 = 'hello';
-            let myVar2 = myVar1;
-            let myVar3 = myVar2;
-            myVar2 = 'word';
-            myVar3 = 'javascript';
 
-            document.getElementById("demo1").innerHTML = myVar1
-            document.getElementById("demo2").innerHTML = myVar2
-            document.getElementById("demo3").innerHTML = myVar3
+            let myobj1 = { team: 'Bears' };
+            let myobj2 = myobj1;
+            let myobj3 = myobj2;
+            myobj2.team = 'Packers'
+            myobj3.team = 'Cowboys'
+
+            document.getElementById("demo1").innerHTML = myobj1.team;
+            document.getElementById("demo2").innerHTML = myobj2.team;
+            document.getElementById("demo3").innerHTML = myobj3.team;
         }
     </script>
 </head>
