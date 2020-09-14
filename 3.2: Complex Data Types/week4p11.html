@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Data Types</title>
+    <script>
+
+        function skynet() {
+            var basicObj1 = {}; // an empty object - {} is a shortcut for "new Object()"
+            var basicObj2 = {};
+            var basicObj3 = {};
+            basicObj1.surprise = "T1000";
+            basicObj2.robot = "T800";
+            basicObj3.bot = "T1";
+            //basicObj['surprise']; // returns "T1000" let's display it in the demo element
+            document.getElementById("demo1").innerHTML = basicObj1['surprise'];  //output statement to html, attributes in an object can be treated as arrays.
+            document.getElementById("demo2").innerHTML = basicObj2['robot'];
+            document.getElementById("demo3").innerHTML = basicObj3['bot'];
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Week 4 exercises</h1>
+    <p id="demo1">The answer goes here:</p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <button type="button" onclick="skynet()">Run it</button>
+</body>
+
+</html>
